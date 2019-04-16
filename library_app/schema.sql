@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS book;
+DROP TABLE IF EXISTS author; 
+DROP TABLE IF EXISTS publisher;
+
+CREATE TABLE book (
+	isbn CHAR PRIMARY KEY,
+	title TEXT,
+	year SMALLINT,
+	pages SMALLINT,
+	languages TEXT
+);
+
+CREATE TABLE author (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	first_name TEXT,
+	last_name TEXT
+);
+
+CREATE TABLE publisher (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name TEXT
+);
+
