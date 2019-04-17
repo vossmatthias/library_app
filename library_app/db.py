@@ -30,7 +30,10 @@ def init_db():
 
 @click.command('init-db')
 @with_appcontext
+<<<<<<< HEAD
 
+=======
+>>>>>>> 219ce5e91842e5541ff05245ec88b2691af3a3e6
 def init_db_command():
     """Clear the existing data and create new tables."""
     init_db()
