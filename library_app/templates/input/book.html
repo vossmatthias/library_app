@@ -1,0 +1,28 @@
+
+
+{% block header %}
+  <h1>{% block title %}Library{% endblock %}</h1>
+  {% endblock %}
+
+{% block content %}
+
+<form method="post">
+
+	<h2>Information on the Book</h2>
+  
+  	ISBN: <input type="text" name="isbn">
+    Title: <input type="text" name="title">
+    Year: <input type="text" name="year">
+    Pages: <input type="text" name="pages">
+    Language: <input type="text" name="language">
+
+  <h2>Information on the Author</h2>
+  	First Name: <input type="text" name="first_name">
+  	Last Name: <input type="text" name="last_name">
+
+  <h2>Information on the Publisher</h2>
+  	Name: <input type="text" name="Name">
+	<input type="submit" value="Submit">
+</form>
+
+{% endblock %}
