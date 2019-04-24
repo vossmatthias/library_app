@@ -1,27 +1,36 @@
 
-
 {% block header %}
-  <h1>{% block title %}Library{% endblock %}</h1>
+  {% block title %}Library{% endblock %}
   {% endblock %}
 
 {% block content %}
 
+<div class="library">
+<h1> Experience the new kind of library now! <span>Save all information about your new book here:</span></h1>
 <form method="post">
+    <div class="section"><span>1</span>Book</div>
+    <div class="inner-wrap">
+        <label>Title:<input type="text" name="field1" /></label>
+        <label>ISBN:<input name="field2" /></label>
+        <label>Year:<input type="text" name="field3" /></label>
+        <label>Pages:<input name="field4" /></label>
+        <label>Language:<input type="text" name="field5" /></label>
+    </div>
 
-	<h2>Information on the Book</h2>
-  
-  	ISBN: <input type="text" name="isbn">
-    Title: <input type="text" name="title">
-    Year: <input type="text" name="year">
-    Pages: <input type="text" name="pages">
-    Language: <input type="text" name="language">
+    <div class="section"><span>2</span>Author</div>
+    <div class="inner-wrap">
+        <label>First Name:<input type="text" name="field6" /></label>
+        <label>Last Name:<input type="text" name="field7" /></label>
+    </div>
 
-  <h2>Information on the Author</h2>
-  	First Name: <input type="text" name="first_name">
-  	Last Name: <input type="text" name="last_name">
-
-  <h2>Information on the Publisher</h2>
-  	Name: <input type="text" name="Name">
-	<input type="submit" value="Submit">
+    <div class="section"><span>3</span>Publisher</div>
+        <div class="inner-wrap">
+        <label>Name:<input type="password" name="field5" /></label>
+    </div>
+    <div class="button-section">
+     <input type="submit" name="Sign Up" />
+    </div>
 </form>
+</div>
+
 {% endblock %}
