@@ -44,13 +44,3 @@ def input_book():
 		flash(error)
 
 	return render_template('input/book.html')
-#			db.execute(
-#				'INSERT INTO book (title) VALUES (?, ?)',
-#				(title)
-#			)
-#			db.commit()
-#		return redirect(url_for('input'))
-#
-#		flash(error)
-
-#	return render_template('input/book.html')
