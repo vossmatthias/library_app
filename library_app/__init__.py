@@ -1,9 +1,7 @@
 # /Users/matthiasvoss/Google Drive/01_code/02_semester/se_foundations/matthiaslibrary/library_app
-
 import os
 
 from flask import Flask
-
 
 def create_app(test_config=None):
     # create and configure the app
