@@ -7,27 +7,27 @@
 
 {% block content %}
 <div class="library">
-<h1> Experience the new kind of library now! <span>Save all information about your new book here:</span></h1>
+<h1> Personal Library! <span> Save all information about your new book here: </span></h1>
 
 <form method="post">
     <div class="section"><span>1</span>Book</div>
     <div class="inner-wrap">
-        <label>Title:<input type="text" name="field1" /></label>
-        <label>ISBN:<input type="text" name="field2" /></label>
-        <label>Year:<input type="text" name="field3" /></label>
-        <label>Pages:<input type="text" name="field4" /></label>
-        <label>Language:<input type="text" name="field5" /></label>
+        <label>Title:<input type="text" name="title" required /></label>
+        <label>ISBN:<input type="text" name="isbn" required /></label>
+        <label>Year:<input type="text" name="year" required /></label>
+        <label>Pages:<input type="text" name="pages" required /></label>
+        <label>Language:<input type="text" name="language" required /></label>
     </div>
 
     <div class="section"><span>2</span>Author</div>
     <div class="inner-wrap">
-        <label>First Name:<input type="text" name="field6" /></label>
-        <label>Last Name:<input type="text" name="field7" /></label>
+        <label>First Name:<input type="text" name="first_name" required /></label>
+        <label>Last Name:<input type="text" name="last_name" required /></label>
     </div>
 
     <div class="section"><span>3</span>Publisher</div>
         <div class="inner-wrap">
-        <label>Name:<input type="password" name="field5" /></label>
+        <label>Name:<input type="text" name="name" required /></label>
     </div>
     <div class="button-section">
      <input type="submit" name="Sign Up" />
