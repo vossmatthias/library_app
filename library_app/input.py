@@ -8,10 +8,9 @@ from flask import (
 from library_app.db import get_db
 
 
-bp = Blueprint('input', __name__, url_prefix='/input')
+bp = Blueprint('input', __name__)
 
-@bp.route('/book', methods=('GET', 'POST'))
-
+@bp.route('/', methods=('GET', 'POST'))
 
 def input_book():
 

@@ -30,6 +30,7 @@ def create_app(test_config=None):
     from . import input
     app.register_blueprint(input.bp)
 
+    app.add_url_rule('/', endpoint='input_book')
 
     return app
 
