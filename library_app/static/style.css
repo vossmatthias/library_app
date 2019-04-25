@@ -1,5 +1,4 @@
 
-
 <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 <style type="text/css">
 .library{
@@ -112,13 +111,5 @@
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
-}
-.library .privacy-policy{
-	float: right;
-	width: 250px;
-	font: 12px Arial, Helvetica, sans-serif;
-	color: #4D4D4D;
-	margin-top: 10px;
-	text-align: right;
 }
 </style>

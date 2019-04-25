@@ -1,19 +1,21 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 {% block header %}
-  {% block title %}Library{% endblock %}
+  {% block title %}{% endblock %}
   {% endblock %}
 
 {% block content %}
-
 <div class="library">
 <h1> Experience the new kind of library now! <span>Save all information about your new book here:</span></h1>
+
 <form method="post">
     <div class="section"><span>1</span>Book</div>
     <div class="inner-wrap">
         <label>Title:<input type="text" name="field1" /></label>
-        <label>ISBN:<input name="field2" /></label>
+        <label>ISBN:<input type="text" name="field2" /></label>
         <label>Year:<input type="text" name="field3" /></label>
-        <label>Pages:<input name="field4" /></label>
+        <label>Pages:<input type="text" name="field4" /></label>
         <label>Language:<input type="text" name="field5" /></label>
     </div>
 

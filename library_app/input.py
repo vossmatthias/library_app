@@ -1,6 +1,5 @@
 import functools
 import sqlite3
-import functools
 
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
@@ -19,8 +18,8 @@ def input_book():
 	db_connection = get_db()
 	db_cursor = db_connection.cursor()
 	#db.get_db()
-	if request.method == "POST":
-		title = request.form['title']
+	#if request.method == "POST":
+	#	title = request.form['title']
 
 	#db.get_db()
 	if request.method == "POST":
@@ -39,7 +38,7 @@ def input_book():
 				'INSERT INTO book (title) VALUES (?); ', (title,)
 			)
 			db_connection.commit()
-		return redirect(url_for('input.input_book'))
+		return redirect(url_for('input/book'))
 
 		flash(error)
 
